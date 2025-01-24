@@ -42,7 +42,7 @@ fun FinalView(navController: NavController, viewModel: SharedViewModel, number: 
             CenterAlignedTopAppBar(
                 title = { TitleBar(name = "Aprende números en inglés", color) },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.secondary
+                    containerColor = MaterialTheme.colorScheme.primary
                 ),
                 navigationIcon = {
                     MainIconButton(icon = Icons.AutoMirrored.Filled.ArrowBack) {

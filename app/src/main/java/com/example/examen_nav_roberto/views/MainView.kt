@@ -37,7 +37,7 @@ fun HomeView(navController: NavController, viewModel: SharedViewModel, color: Co
             CenterAlignedTopAppBar(
                 title = { TitleBar(name = "Aprende números en inglés", color) },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.secondary
+                    containerColor = MaterialTheme.colorScheme.primary
                 )
             )
         }
@@ -54,7 +54,7 @@ fun ContentHomeView(navController: NavController, viewModel: SharedViewModel, co
         .wrapContentSize(Alignment.Center)
     ){
         TitleView(name = "Números en inglés", color = color)
-        MainButton(name = "Crear lista", backColor = MaterialTheme.colorScheme.secondary, color = color) {
+        MainButton(name = "Crear lista", backColor = MaterialTheme.colorScheme.primary, color = color) {
             viewModel.generateList()
             navController.navigate("List")
         }
